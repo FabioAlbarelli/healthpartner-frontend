@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Health Partner Frontend
 
-## Getting Started
+Este é o repositório **Front-End** do sistema **Health Partner CRM**. O sistema é uma ferramenta de uso interno projetada para motivar a equipe, demonstrar progresso e permitir uma visualização clara dos dados de prospecção e gestão de médicos.
 
-First, run the development server:
+## 🚀 Objetivos
+- **Motivação**: Dashboard visualmente atraente que destaca o crescimento e a atividade do sistema.
+- **Progresso**: Visualização clara do funil de médicos (Novos, Interessados, Ativos, Rejeitados).
+- **Transparência**: Timeline de interações para acompanhar o fluxo entre agentes automáticos e humanos.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Stack Utilizada
+- **Framework**: [Next.js (App Router)](https://nextjs.org/)
+- **Linguagem**: [TypeScript](https://www.typescriptlang.org/)
+- **Estilização**: [Tailwind CSS](https://tailwindcss.com/)
+- **Gerenciamento de Estado**: React Hooks (Simples & Limpo)
+- **Dados**: Mocks realistas (Sem backend/BD no momento)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Estrutura do Projeto
+- `src/app`: Rotas e páginas do sistema.
+- `src/components`: Componentes de UI e seções do Dashboard.
+- `src/mocks`: Dados simulados para visualização imediata.
+- `src/types`: Definições de tipos TypeScript compartilhados.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Deploy no Vercel
+O projeto está pronto para ser conectado diretamente ao Vercel:
+1. Conecte o repositório GitHub ao Vercel.
+2. O Vercel detectará automaticamente o Next.js.
+3. Use a branch `master` para o deploy de produção.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚠️ Limitações Conhecidas
+- **Sem Backend**: Todas as interações são simuladas. Mudanças no estado do dashboard não persistem após o refresh.
+- **Sem Autenticação**: O acesso é direto ao dashboard (uso interno).
+- **Dados Estáticos**: Os dados são mockados no arquivo `src/mocks/data.ts`.
 
-## Learn More
+## 🗺️ Roadmap Futuro
 
-To learn more about Next.js, take a look at the following resources:
+### Frontend
+- [ ] Implementar filtros na lista de médicos.
+- [ ] Adicionar gráficos de tendência (Line/Bar charts).
+- [ ] Criar visualização de detalhes do médico.
+- [ ] Adicionar funcionalidade de envio manual de mensagens (mock).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Backend (Futuro)
+- [ ] Integração com API REST real.
+- [ ] Autenticação de usuários internos.
+- [ ] Webhooks para atualizações em tempo real via WhatsApp.
+- [ ] Banco de dados para persistência de médicos e mensagens.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Desenvolvido por **Antigravity** para Health Partner.
